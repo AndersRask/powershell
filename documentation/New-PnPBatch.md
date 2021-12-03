@@ -21,6 +21,11 @@ New-PnPBatch [-RetainRequests]
 ## DESCRIPTION
 Creates a new batch to be used by cmdlets that support batching. The requests in the batch are clear after execute Invoke-PnPBatch, unless you specify -RetainRequests. That allows you to execute batch multiple times.
 
+You can use Get-Command to get a list of cmdlets that currently support -Batch parameter:
+```powershell
+Get-Command -ParameterName Batch -Module PnP.PowerShell
+```
+
 ## EXAMPLES
 
 ### EXAMPLE 1
